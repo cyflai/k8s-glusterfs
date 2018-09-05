@@ -1,3 +1,4 @@
+#kubectl create -f gluster-service.yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -6,4 +7,4 @@ metadata:
     app: gluster
 spec:
   ports:
-  - port: 24007
+  - port: 1

@@ -1,3 +1,5 @@
+#kubectl create -f gluster-endpoints.yaml
+#kubectl get endpoints glusterfs-cluster
 {
   "kind": "Endpoints",
   "apiVersion": "v1",
@@ -13,7 +15,7 @@
       ],
       "ports": [
         {
-          "port": 1001
+          "port": 1
         }
       ]
     },
@@ -25,7 +27,7 @@
       ],
       "ports": [
         {
-          "port": 1001
+          "port": 1
         }
       ]
     },
@@ -37,7 +39,7 @@
       ],
       "ports": [
         {
-          "port": 1001
+          "port": 1
         }
       ]
     }
