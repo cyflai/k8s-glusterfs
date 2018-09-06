@@ -1,0 +1,99 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "chris-gfs-1"
+    },
+    "spec": {
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 22,
+                "targetPort": 22
+            }
+        ]
+    }
+}
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "chris-gfs-2"
+    },
+    "spec": {
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 22,
+                "targetPort": 22
+            }
+        ]
+    }
+}
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "chris-gfs-3"
+    },
+    "spec": {
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 22,
+                "targetPort": 22
+            }
+        ]
+    }
+}
+{
+    "kind": "Endpoints",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "chris-gfs-1"
+    },
+    "subsets": [
+        {
+            "addresses": [
+                { "ip": "10.15.76.67" }
+            ],
+            "ports": [
+                { "port": 22 }
+            ]
+        }
+    ]
+}
+{
+    "kind": "Endpoints",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "chris-gfs-2"
+    },
+    "subsets": [
+        {
+            "addresses": [
+                { "ip": "10.15.76.88" }
+            ],
+            "ports": [
+                { "port": 22 }
+            ]
+        }
+    ]
+}
+{
+    "kind": "Endpoints",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "chris-gfs-3"
+    },
+    "subsets": [
+        {
+            "addresses": [
+                { "ip": "10.15.76.5" }
+            ],
+            "ports": [
+                { "port": 22 }
+            ]
+        }
+    ]
+}
