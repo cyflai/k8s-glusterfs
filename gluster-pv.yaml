@@ -8,7 +8,7 @@ spec:
   accessModes:
   - ReadWriteMany    
   glusterfs:         
-    endpoints: gluster-cluster 
+    endpoints: glusterfs-cluster 
     path: /k8s-vol1 
     readOnly: false
   persistentVolumeReclaimPolicy: Retain
