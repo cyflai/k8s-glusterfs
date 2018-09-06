@@ -1,0 +1,33 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "Chris-GFS-1"
+    },
+    "spec": {
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 22,
+                "targetPort": 22
+            }
+        ]
+    }
+}
+{
+    "kind": "Endpoints",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "Chris-GFS-1"
+    },
+    "subsets": [
+        {
+            "addresses": [
+                { "ip": "10.15.76.67" }
+            ],
+            "ports": [
+                { "port": 22 }
+            ]
+        }
+    ]
+}
